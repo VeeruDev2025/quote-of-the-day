@@ -1,0 +1,91 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  z-index: -1;
+}
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+.subtitle {
+  color: #005f73;
+  margin-bottom: 20px;
+}
+.card {
+  padding: 20px;
+  min-height: 120px;
+}
+.loading {
+  font-style: italic;
+}
+.error {
+  color: #c62828;
+  margin-bottom: 10px;
+}
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #023e8a;
+}
+.author {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #005f73;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+button:first-child {
+  background: #0077b6;
+  color: white;
+}
+button:last-child {
+  background: white;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+}
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #005f73;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.loader-top {
+  margin-top: -40px;
+}
