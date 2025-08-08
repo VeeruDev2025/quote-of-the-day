@@ -1,91 +1,81 @@
 .app {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #f0f4f8;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 20px;
-}
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #0077b6, #00b4d8);
-  z-index: -1;
-}
-.container {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 500px;
-  width: 90%;
-}
-.subtitle {
-  color: #005f73;
-  margin-bottom: 20px;
-}
-.card {
-  padding: 20px;
-  min-height: 120px;
-}
-.loading {
-  font-style: italic;
-}
-.error {
-  color: #c62828;
-  margin-bottom: 10px;
-}
-.quote {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #023e8a;
-}
-.author {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #005f73;
-}
-.buttons {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-}
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-button:first-child {
-  background: #0077b6;
-  color: white;
-}
-button:last-child {
-  background: white;
-  color: #0077b6;
-  border: 2px solid #0077b6;
-}
-footer {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #005f73;
-}
-@media (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
 }
 
-.loader-top {
-  margin-top: -40px;
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  font-weight: bold;
+  color: #333;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.footer {
+  font-size: 0.85rem;
+  color: #888;
 }
